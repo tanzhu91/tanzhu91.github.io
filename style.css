@@ -14,6 +14,7 @@ h1 {
 
 /* Projects Section */
 section {
+    display: none;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -21,6 +22,11 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
+section.active {
+    display: block;
+}
+
 nav {
     text-align: center;
     padding: 10px;

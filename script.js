@@ -19,11 +19,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove the popup after 3 seconds
     setTimeout(function () {
         popup.style.display = "none";
-    }, 3000);
+    }, 2000);
 });
 
 // Smooth Scroll Function
 function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth"
+    });
+};
+
+window.scrollToSection = function (sectionId) {
+    // Hide all sections first
+    document.querySelectorAll("section").forEach(section => {
+        section.classList.remove("active");
+    });
+
+    // Show only the clicked section
+    document.getElementById(sectionId).classList.add("active");
+
+    // Smooth scroll to the section
     document.getElementById(sectionId).scrollIntoView({
         behavior: "smooth"
     });
