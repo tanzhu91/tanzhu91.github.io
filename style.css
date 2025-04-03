@@ -156,6 +156,42 @@ button:hover {
 
 
 
+#left-sidebar {
+    flex: 0 0 250px; /* This sets the sidebar to be 250px wide */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.profile-img {
+    width: 100%; /* Makes the image responsive */
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #fff; /* Optional: white border around image */
+}
+
+.email {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.email a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+/* Right content area */
+.main-content {
+    flex: 1; /* Takes the remaining space on the right */
+    padding: 20px;
+}
+
+
+
 @media (max-width: 768px) {
     .project-container {
         grid-template-columns: 1fr; /* Stack items on smaller screens */
