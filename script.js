@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "none";
     }, 3000);
 });
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth"
+    });
+}
