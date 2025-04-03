@@ -20,6 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         popup.style.display = "none";
     }, 2000);
+
+    let contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent page refresh
+
+            // Simulate form submission (replace with backend later)
+            let formStatus = document.getElementById("form-status");
+            formStatus.textContent = "Message sent successfully!";
+            formStatus.style.display = "block";
+
+            // Clear the form after submission
+            contactForm.reset();
+
+            // Hide success message after 3 seconds
+            setTimeout(() => {
+                formStatus.style.display = "none";
+            }, 2000);
+        });
+    }
 });
 
 // Smooth Scroll Function
