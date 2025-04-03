@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.style.transform = "translateX(-50%)";
     popup.style.background = "black";
     popup.style.color = "white";
-    popup.style.padding = "10px 20px";
-    popup.style.borderRadius = "5px";
+    popup.style.padding = "20px 20px";
+    popup.style.borderRadius = "10px";
     popup.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
     popup.style.zIndex = "1000";
 
