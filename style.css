@@ -12,21 +12,7 @@ h1 {
     color: #333;
 }
 
-/* Projects Section */
-section {
-    display: none;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-section.active {
-    display: block;
-}
-
+/* Navigation Styling */
 nav {
     text-align: center;
     padding: 10px;
@@ -46,13 +32,23 @@ nav button {
 nav button:hover {
     background: #005bb5;
 }
-/* Center text in sections */
 
-h2 {
-    text-align: center;
-    color: #0073e6;
+/* Projects Section */
+section {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
+section.active {
+    display: block;
+}
+
+/* Project Cards Styling */
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -80,7 +76,6 @@ h2 {
     color: #0073e6;
 }
 
-
 .project-card a {
     display: inline-block;
     margin-top: 10px;
@@ -100,7 +95,7 @@ h2 {
     transform: scale(1.05); /* Slightly enlarge the button on hover for a dynamic effect */
 }
 
-
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -135,6 +130,7 @@ button:hover {
     background: #005bb5;
 }
 
+/* About Section Styling */
 #about {
     max-width: 900px; /* Limit width for better text readability */
     margin: 0 auto; /* Center the text */
@@ -154,14 +150,16 @@ button:hover {
     text-indent: 30px; /* Indent the first line of each paragraph */
 }
 
+/* Layout Container */
 .container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
 }
 
+/* Sidebar Styling */
 #left-sidebar {
-    flex: 0 0 250px; /* This sets the sidebar to be 250px wide */
+    flex: 0 0 250px; /* Fixed width for the sidebar */
     padding: 20px;
     background-color: #333;
     color: white;
@@ -169,9 +167,11 @@ button:hover {
 }
 
 .profile-img {
-    width: 100%; /* Makes the image responsive */
-    border-radius: 50%; /* Circular image */
-    border: 3px solid #fff; /* Optional: white border around image */
+    width: 150px; /* Adjust image size */
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Optional white border around image */
+    margin-bottom: 20px; /* Space below image */
 }
 
 .email {
@@ -188,16 +188,24 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Right content area */
+/* Main Content Area Styling */
 .main-content {
-    flex: 1; /* Takes the remaining space on the right */
+    flex: 1; /* Takes up the remaining space */
     padding: 20px;
 }
 
-
-
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .project-container {
         grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack the sidebar and content vertically on smaller screens */
+    }
+
+    #left-sidebar {
+        width: 100%; /* Full width on small screens */
+        height: auto;
     }
 }
