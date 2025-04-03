@@ -1,6 +1,5 @@
 /* General styles */
 body {
-    display: flex;
     font-family: Georgia, serif;
     text-align: center;
     background-color: #f4f4f4;
@@ -155,7 +154,11 @@ button:hover {
     text-indent: 30px; /* Indent the first line of each paragraph */
 }
 
-
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
 
 #left-sidebar {
     flex: 0 0 250px; /* This sets the sidebar to be 250px wide */
