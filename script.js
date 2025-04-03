@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add it to the page
     document.body.appendChild(popup);
 
-    // Remove the popup after 3 seconds
+    // Remove the popup after 2 seconds
     setTimeout(function () {
         popup.style.display = "none";
     }, 2000);
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Smooth Scroll Function
 function scrollToSection(sectionId) {
+
     document.getElementById(sectionId).scrollIntoView({
         behavior: "smooth"
     });
