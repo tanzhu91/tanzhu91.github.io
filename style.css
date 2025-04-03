@@ -135,6 +135,26 @@ button:hover {
     background: #005bb5;
 }
 
+#about {
+    max-width: 900px; /* Limit width for better text readability */
+    margin: 0 auto; /* Center the text */
+    padding: 20px;
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+#about h2 {
+    color: #0073e6;
+    text-align: center;
+    margin-bottom: 20px; /* Space between heading and text */
+}
+
+#about p {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-indent: 30px; /* Indent the first line of each paragraph */
+}
+
+
 
 @media (max-width: 768px) {
     .project-container {
