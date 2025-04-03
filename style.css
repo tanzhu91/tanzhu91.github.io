@@ -1,5 +1,6 @@
 /* General styles */
 body {
+    display: flex;
     font-family: Georgia, serif;
     text-align: center;
     background-color: #f4f4f4;
