@@ -47,10 +47,12 @@ nav button:hover {
     background: #005bb5;
 }
 /* Center text in sections */
+
 h2 {
     text-align: center;
     color: #0073e6;
 }
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -60,7 +62,7 @@ h2 {
 }
 
 .project-card {
-    background: white;
+    background: rgba(129, 125, 84, 0.926);
     padding: 15px;
     margin: 10px;
     width: 300px;
@@ -79,7 +81,24 @@ h2 {
 }
 
 
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 25px; /* Increase padding for larger clickable area */
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Add emphasis to text */
+    text-align: center; /* Ensure text is centered */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effect */
+}
 
+.project-card a:hover {
+    background: #005bb5;
+    transform: scale(1.05); /* Slightly enlarge the button on hover for a dynamic effect */
+}
 
 
 form {
