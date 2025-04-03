@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         popup.style.display = "none";
     }, 3000);
-})
+});
+
+// Smooth Scroll Function
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({
         behavior: "smooth"
