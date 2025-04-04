@@ -179,6 +179,16 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.left-sidebar a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.left-sidebar a:hover {
+    text-decoration: underline;
+}
+
+
 .profile-img {
     width: 250px; /* Adjust image size */
     height: 250px;
