@@ -193,7 +193,7 @@ button:hover {
 
 /* Main Content Area Styling */
 .main-content {
-    margin-left: 250px;
+    margin-left: 350px;
     flex: 1; /* Takes up the remaining space */
     padding: 20px;
 }
