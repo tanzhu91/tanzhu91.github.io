@@ -160,7 +160,7 @@ button:hover {
 /* Sidebar Styling */
 #left-sidebar {
     flex: 0 0 150px; /* Fixed width for the sidebar */
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 50vh; /* Full height of the viewport */
