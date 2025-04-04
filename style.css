@@ -151,12 +151,6 @@ button:hover {
 }
 
 /* Layout Container */
-.container {
-    display: flex;
-    flex-direction: row;
-    min-height: 150vh;
-}
-
 .main-wrapper {
     display: flex;
     min-height: 100vh; /* Full height */
