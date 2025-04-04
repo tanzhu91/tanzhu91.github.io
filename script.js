@@ -52,7 +52,7 @@ function scrollToSection(sectionId) {
 
 window.scrollToSection = function (sectionId) {
     // Hide all sections first
-    document.querySelectorAll("section").forEach(section => {
+    document.querySelectorAll("section:not(#left-sidebar)").forEach(section => {
         section.classList.remove("active");
     });
 
