@@ -196,30 +196,7 @@ button:hover {
     padding: 20px;
 }
 
-#fixed-sidebar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 200px;
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 999;
-}
 
-#fixed-sidebar img {
-    width: 100%;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-bottom: 10px;
-}
-
-#fixed-sidebar a {
-    color: #0073e6;
-    text-decoration: none;
-}
 
 
 /* Responsive Design for Smaller Screens */
