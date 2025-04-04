@@ -190,8 +190,8 @@ button:hover {
 
 
 .profile-img {
-    width: 250px; /* Adjust image size */
-    height: 250px;
+    width: 150px; /* Adjust image size */
+    height: 150px;
     border-radius: 50%;
     border: 3px solid #fff; /* Optional white border around image */
     margin-bottom: 20px; /* Space below image */
