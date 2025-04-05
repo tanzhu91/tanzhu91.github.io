@@ -164,7 +164,7 @@ button:hover {
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 100vh;
-    margin: 20px auto;
+    margin: 30px auto;
 
     width: 100%; /* Ensure it takes the full width of its container */
     height: 100%; /* Fixed height for the image */
