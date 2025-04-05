@@ -158,9 +158,9 @@ button:hover {
 /* Sidebar Styling */
 
 
-
 .left-sidebar .profile-img {
     flex: 0 0 350px;
+    padding: 17px;
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 200vh;
