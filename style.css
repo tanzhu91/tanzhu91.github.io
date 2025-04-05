@@ -16,6 +16,7 @@ h1 {
 nav {
     text-align: center;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 nav button {
@@ -23,7 +24,7 @@ nav button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 0 5px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
@@ -37,7 +38,7 @@ nav button:hover {
 section {
     display: none;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     max-width: 800px;
     background: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
