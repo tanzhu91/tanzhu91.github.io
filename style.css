@@ -41,6 +41,7 @@ section {
     background: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin: 20px auto;
 }
 
 section.active {
@@ -60,7 +61,6 @@ section.active {
     background: rgba(129, 125, 84, 0.926);
     padding: 15px;
     margin: 10px;
-    width: 300px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -162,7 +162,6 @@ button:hover {
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 50vh; /* Full height of the viewport */
-     /* Ensure padding doesn't affect width */
     overflow: auto; /* Allow scrolling if necessary */
 }
 
@@ -215,10 +214,6 @@ button:hover {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .project-container {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
-    }
-
     .main-wrapper {
         flex-direction: column; /* Stack the sidebar and content vertically on smaller screens */
     }
@@ -226,5 +221,9 @@ button:hover {
     .left-sidebar {
         width: 100%; /* Full width on small screens */
         height: auto;
+    }
+    
+    .project-container {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
     }
 }
