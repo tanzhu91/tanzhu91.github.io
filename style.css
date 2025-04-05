@@ -15,7 +15,7 @@ h1 {
 /* Navigation Styling */
 nav {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 nav button {
@@ -37,7 +37,6 @@ nav button:hover {
 section {
     display: none;
     padding: 20px;
-    margin: 0 auto 20px auto;
     max-width: 800px;
     background: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -220,11 +219,11 @@ button:hover {
         grid-template-columns: 1fr; /* Stack items on smaller screens */
     }
 
-    .container {
+    .main-wrapper {
         flex-direction: column; /* Stack the sidebar and content vertically on smaller screens */
     }
 
-    #left-sidebar {
+    .left-sidebar {
         width: 100%; /* Full width on small screens */
         height: auto;
     }
