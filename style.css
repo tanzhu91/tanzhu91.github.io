@@ -203,7 +203,7 @@ button:hover {
 }
 
 /* Main Content Area Styling */
-.main-wrapper {
+.main-content {
     flex: 1; /* Takes up the remaining space */
     padding: 20px;
 }
