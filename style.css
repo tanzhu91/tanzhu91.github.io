@@ -158,22 +158,30 @@ button:hover {
 /* Sidebar Styling */
 
 
-.left-sidebar .profile-img {
-    flex: 0 0 250px;
-    padding: 17px;
+.left-sidebar {
+    width: 250px; /* Sidebar width */
     background-color: #333;
     color: rgb(255, 255, 255);
-    height: 50vh;
-    margin: 50px auto;
-
-    width: 100%; /* Ensure it takes the full width of its container */
-    height: 100%; /* Fixed height for the image */
-    object-fit: cover; /* This will ensure the image covers the area without distortion */
-    border-radius: 50%; /* Makes the image round */
-    border: 2px solid #fff; /* Optional white border around image */
-    margin-bottom: 20px; /* Space below the image */
-    margin-top: 20px; /* Add a little space on top */
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center; /* Center content */
 }
+
+.profile-img {
+    width: 100%; /* Make it take the full width of the sidebar */
+    max-width: 200px; /* Ensure the image doesn't grow beyond this width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Round image */
+    border: 3px solid #fff; /* Optional white border around the image */
+    margin-bottom: 20px; /* Add some space below the image */
+    margin-top: 20px; /* Add space on top */
+}
+
+
 
 .left-sidebar a {
     color: #0073e6;
