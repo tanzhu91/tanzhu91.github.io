@@ -157,7 +157,7 @@ button:hover {
 
 /* Sidebar Styling */
 .left-sidebar {
-    flex: 0 0 450px; /* Fixed width for the sidebar */
+    flex: 0 0 350px; /* Fixed width for the sidebar */
     padding: 17px;
     background-color: #333;
     color: rgb(255, 255, 255);
@@ -188,7 +188,10 @@ button:hover {
 .profile-img {
     width: 200px; /* Adjust image size */
     height: 200px; /* Optional white border around image */
+    border-radius: 50%; /* Ensure it's circular */
+    margin: 20px auto; /* Center the image with some margin */
 }
+
 
 .email {
     margin-top: 20px;
