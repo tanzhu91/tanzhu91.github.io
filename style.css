@@ -169,7 +169,7 @@ button:hover {
     width: 100%; /* Ensure it takes the full width of its container */
     height: 200px; /* Fixed height for the image */
     object-fit: cover; /* This will ensure the image covers the area without distortion */
-    border-radius: 10%; /* Makes the image round */
+    border-radius: 50%; /* Makes the image round */
     border: 3px solid #fff; /* Optional white border around image */
     margin-bottom: 20px; /* Space below the image */
     margin-top: 20px; /* Add a little space on top */
