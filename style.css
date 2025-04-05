@@ -182,6 +182,7 @@ button:hover {
 
 
 .profile-img {
+    margin-top: 25px;
     width: 200px; /* Adjust image size */
     height: 200px;
     border-radius: 50%;
