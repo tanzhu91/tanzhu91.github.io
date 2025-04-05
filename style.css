@@ -158,7 +158,7 @@ button:hover {
 /* Sidebar Styling */
 .left-sidebar {
     flex: 0 0 350px; /* Fixed width for the sidebar */
-    padding: 20px;
+    padding: 25px;
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 100vh; /* Full height of the viewport */
@@ -187,7 +187,7 @@ button:hover {
     border-radius: 50%;
     border: 3px solid #fff; /* Optional white border around image */
     margin-bottom: 100px; /* Space below image */
-    margin-top: 470px;
+    margin-top: 400px;
 }
 
 .email {
