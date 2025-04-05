@@ -162,7 +162,7 @@ button:hover {
     flex: 0 0 350px;
     background-color: #333;
     color: rgb(255, 255, 255);
-    height: 100vh;
+    height: 200vh;
 
     width: 100%; /* Ensure it takes the full width of its container */
     height: 100%; /* Fixed height for the image */
