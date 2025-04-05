@@ -222,6 +222,10 @@ button:hover {
 position: fixed;
 }
 
+.contact-info {
+position: fixed;
+}
+
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
