@@ -163,7 +163,7 @@ button:hover {
     background-color: #333;
     color: rgb(255, 255, 255);
     height: 50vh; /* Full height of the viewport */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+     /* Ensure padding doesn't affect width */
     overflow: auto; /* Allow scrolling if necessary */
 }
 
