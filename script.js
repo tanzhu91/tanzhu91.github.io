@@ -43,14 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Smooth Scroll Function
+
 function scrollToSection(sectionId) {
-
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: "smooth"
-    });
-};
-
-window.scrollToSection = function (sectionId) {
     // Hide all sections first
     document.querySelectorAll("section:not(#left-sidebar)").forEach(section => {
         section.classList.remove("active");
