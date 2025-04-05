@@ -2,7 +2,7 @@
 body {
     font-family: Georgia, serif;
     text-align: center;
-    background: linear-gradient(to right,#ff7f50,#40e0d0);
+    background: linear-gradient(to right, rgba(255, 127, 80, 0.8), rgba(64, 224, 208, 0.8));
     margin: 0;
     padding: 0;
 }
@@ -162,7 +162,7 @@ button:hover {
 
 .left-sidebar {
     width: 300px; /* Sidebar width */
-    background: linear-gradient(to right, rgba(255, 127, 80, 0.8), rgba(64, 224, 208, 0.8));
+    background-color: #333;
     color: rgb(255, 255, 255);
     padding: 20px;
     height: 100vh;
