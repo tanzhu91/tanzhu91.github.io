@@ -185,7 +185,12 @@ button:hover {
 }
 
 
-
+.profile-img {
+    width: 200px; /* Adjust image size */
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Optional white border around image */
+}
 
 .email {
     margin-top: 20px;
