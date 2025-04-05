@@ -2,7 +2,7 @@
 body {
     font-family: Georgia, serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: linear-gradient(to right,#ff7f50,#40e0d0);
     margin: 0;
     padding: 0;
 }
@@ -32,6 +32,8 @@ nav button {
 nav button:hover {
     background: #005bb5;
 }
+
+
 
 /* Projects Section */
 section {
