@@ -179,7 +179,7 @@ button:hover {
     height: auto; /* Auto height to maintain aspect ratio */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 50%; /* Round image */
-    border: 3px solid #fff; /* Optional white border around the image */
+    border: 3px solid #d58f04; /* Optional white border around the image */
     margin-bottom: 20px; /* Add some space below the image */
     margin-top: 20px; /* Add space on top */
 }
