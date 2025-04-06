@@ -162,7 +162,7 @@ button:hover {
 
 .left-sidebar {
     width: 300px; /* Sidebar width */
-    background: linear-gradient(to left, rgba(255, 127, 80, 0.8), rgba(64, 224, 208, 0.8));
+    background: repeating-linear-gradient(45 deg,#ff7f50,#ff7f50 10px,#40e0d0 10px,#40e0d0 20px);
     color: rgb(255, 255, 255);
     padding: 20px;
     height: 100vh;
