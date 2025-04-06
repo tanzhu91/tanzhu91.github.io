@@ -307,33 +307,26 @@ button:hover {
   
     .left-sidebar {
       width: 100%;
-      height: auto;
-      padding: 15px;
+      height: auto !important; /* Force it to collapse */
+      padding: 20px;
+      background-color: #333;
       text-align: center;
+      position: relative; /* No absolute or fixed positioning */
+      z-index: 1; /* Ensure it's behind the nav if needed */
     }
   
     .left-sidebar .profile-img {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
       border-radius: 50%;
       margin: 10px auto;
     }
   
     .main-content {
       padding: 15px;
-    }
-  
-    .project-container {
-      grid-template-columns: 1fr; /* One column layout */
-      padding: 0 10px;
-    }
-  
-    .project-card {
-      margin: 10px 0;
-    }
-  
-    h1, h2, h3 {
-      font-size: 1.5em;
+      z-index: 2;
+      position: relative;
     }
   
     nav button {
@@ -341,5 +334,20 @@ button:hover {
       margin: 5px 0;
       font-size: 16px;
     }
+  
+    section {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .project-container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .project-card {
+      margin: 10px 0;
+    }
   }
+  
   
