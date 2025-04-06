@@ -204,7 +204,7 @@ button:hover {
 }
 
 .email a {
-    color: #0073e6;
+    color: #020304;
     text-decoration: none;
 }
 
@@ -229,7 +229,7 @@ button:hover {
 
 .title {
     font-size: 1em;
-    color: grey;
+    color: rgb(7, 4, 4);
 }
 
 .contact-info {
