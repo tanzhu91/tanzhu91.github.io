@@ -164,7 +164,7 @@ button:hover {
 .left-sidebar {
     width: 300px; /* Sidebar width */
     background: repeating-linear-gradient(45 deg,#d58f04,#d58f04 10px,#40e0d0 10px,#40e0d0 20px);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 20px;
     height: 100vh;
     position: fixed;
@@ -179,7 +179,7 @@ button:hover {
     height: auto; /* Auto height to maintain aspect ratio */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 50%; /* Round image */
-    border: 3px solid #514734; /* Optional white border around the image */
+    border: 2px solid #514734; /* Optional white border around the image */
     margin-bottom: 20px; /* Add some space below the image */
     margin-top: 20px; /* Add space on top */
 }
