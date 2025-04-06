@@ -302,15 +302,44 @@ button:hover {
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .main-wrapper {
-        flex-direction: column; /* Stack the sidebar and content vertically on smaller screens */
+      flex-direction: column;
     }
-
+  
     .left-sidebar {
-        width: 100%; /* Full width on small screens */
-        height: auto;
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      text-align: center;
     }
-
+  
+    .left-sidebar .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  
     .project-container {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
+      grid-template-columns: 1fr; /* One column layout */
+      padding: 0 10px;
     }
-}
+  
+    .project-card {
+      margin: 10px 0;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5em;
+    }
+  
+    nav button {
+      width: 100%;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  }
+  
