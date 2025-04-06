@@ -309,7 +309,7 @@ button:hover {
       width: 100%;
       height: auto !important; /* Force it to collapse */
       padding: 20px;
-      background-color: #333;
+      background: repeating-linear-gradient(45 deg,#d58f04,#d58f04 10px,#40e0d0 10px,#40e0d0 20px);
       text-align: center;
       position: relative; /* No absolute or fixed positioning */
       z-index: 1; /* Ensure it's behind the nav if needed */
