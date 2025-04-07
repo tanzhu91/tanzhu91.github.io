@@ -220,6 +220,8 @@ button:hover {
     flex: 1; /* Takes up the remaining space */
     padding: 20px;
     box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
 }
 
 .info-content {
