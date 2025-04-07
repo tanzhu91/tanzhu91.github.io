@@ -302,7 +302,7 @@ button:hover {
   
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .main-wrapper {
       flex-direction: column;
     }
