@@ -219,6 +219,7 @@ button:hover {
 .main-content {
     flex: 1; /* Takes up the remaining space */
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .info-content {
