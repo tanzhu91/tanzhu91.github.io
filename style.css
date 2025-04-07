@@ -315,7 +315,7 @@ button:hover {
   
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 1280px) {
+@media (max-width: 1324px) {
     .main-wrapper {
       flex-direction: column;
     }
