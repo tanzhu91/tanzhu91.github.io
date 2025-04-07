@@ -166,6 +166,8 @@ button:hover {
 
 .left-sidebar {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px; /* Sidebar width */
     box-sizing: border-box;
     overflow: hidden;
