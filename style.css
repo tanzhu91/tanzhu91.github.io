@@ -222,6 +222,7 @@ button:hover {
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .info-content {
