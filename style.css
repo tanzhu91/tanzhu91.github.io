@@ -157,7 +157,7 @@ button:hover {
 .main-wrapper {
     display: flex;
     min-height: 100vh; /* Full height */
-    flex-direction: row; 
+    flex-wrap: wrap;
 }
 
 /* Sidebar Styling */
