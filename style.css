@@ -111,6 +111,7 @@ section.active {
   
 .tableau-box {
     background: rgba(84, 84, 129, 0.926);
+    justify-content: center;
     color: white;
     padding: 20px;
     border-radius: 10px;
