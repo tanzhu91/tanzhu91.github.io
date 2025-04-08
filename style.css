@@ -115,12 +115,11 @@ section.active {
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
-    min-height: 300px; /* taller */
+    min-height: 150px; /* taller */
     flex: 1; /* Takes up remaining horizontal space */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 10px;
-    grid-column: span 2; 
 }
   
 .tableau-box h3 {
