@@ -101,6 +101,47 @@ section.active {
 }
 
 
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .tableau-box {
+    background: rgba(84, 84, 129, 0.926);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tableau-box h3 {
+    color: #40e0d0;
+    margin-bottom: 10px;
+  }
+  
+  .tableau-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tableau-box a:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+  }
+  
+
 
 
 /* Form Styling */
