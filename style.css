@@ -107,14 +107,9 @@ section.active {
 
 
 
-.project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    flex: 2; /* Take up more space */
-  }
+
   
-  .tableau-box {
+.tableau-box {
     background: rgba(84, 84, 129, 0.926);
     color: white;
     padding: 20px;
@@ -124,13 +119,13 @@ section.active {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 10px;
-  }
+}
   
-  .tableau-box h3 {
+.tableau-box h3 {
     color: #40e0d0;
-  }
+}
   
-  .tableau-box a {
+.tableau-box a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -140,12 +135,12 @@ section.active {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease, transform 0.3s ease;
-  }
+}
   
-  .tableau-box a:hover {
+.tableau-box a:hover {
     background: #005bb5;
     transform: scale(1.05);
-  }
+}
   
 
 
