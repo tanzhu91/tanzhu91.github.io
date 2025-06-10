@@ -23,20 +23,21 @@ nav {
 }
 
 nav button {
-    background: #0073e6;
+    background: #4285f4;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 10px 24px;
+    margin: 0 10px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 nav button:hover {
-    background: #005bb5;
+    background: #3367d6;
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
 }
-
 
 
 /* Projects Section */
