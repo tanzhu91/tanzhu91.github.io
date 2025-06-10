@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
+
+
 // Smooth Scroll Function
 
 function scrollToSection(sectionId) {

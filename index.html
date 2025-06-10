@@ -6,6 +6,117 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+<style>
+  /* Hide default cursor */
+  html, body, * {
+    cursor: none !important;
+  }
+
+  /* Main cursor */
+  .cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #4285f4;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+  }
+
+  /* Cursor trail dots */
+  .cursor-trail {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: #4285f4;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Active state (when clicking) */
+  .cursor.active {
+    transform: translate(-50%, -50%) scale(0.7);
+    background-color: rgba(0, 115, 230, 0.3);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor';
+    document.body.appendChild(cursor);
+    
+    // Create trail elements
+    const trailCount = 8;
+    const trailElements = [];
+    
+    for (let i = 0; i < trailCount; i++) {
+      const trail = document.createElement('div');
+      trail.className = 'cursor-trail';
+      trail.style.opacity = 0.3 + (0.7 * (i / trailCount));
+      trail.style.width = (10 + (i * 2)) + 'px';
+      trail.style.height = (10 + (i * 2)) + 'px';
+      document.body.appendChild(trail);
+      trailElements.push(trail);
+    }
+    
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    
+    // Track mouse position
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+    
+    // Click effects
+    document.addEventListener('mousedown', () => {
+      cursor.classList.add('active');
+    });
+    
+    document.addEventListener('mouseup', () => {
+      cursor.classList.remove('active');
+    });
+    
+    // Animation loop
+    function animate() {
+      // Smooth follow for main cursor
+      cursorX += (mouseX - cursorX) * 0.2;
+      cursorY += (mouseY - cursorY) * 0.2;
+      
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+      
+      // Update trail elements
+      trailElements.forEach((trail, i) => {
+        const leader = i === 0 ? { x: cursorX, y: cursorY } : 
+                      { x: parseFloat(trailElements[i-1].style.left), 
+                        y: parseFloat(trailElements[i-1].style.top) };
+        
+        const delayFactor = 0.3 + (i * 0.05);
+        const trailX = leader.x + (mouseX - leader.x) * delayFactor;
+        const trailY = leader.y + (mouseY - leader.y) * delayFactor;
+        
+        trail.style.left = trailX + 'px';
+        trail.style.top = trailY + 'px';
+      });
+      
+      requestAnimationFrame(animate);
+    }
+    
+    animate();
+  });
+</script>
+
+
+
 <body>
 
         <!-- Left Sidebar Section -->
