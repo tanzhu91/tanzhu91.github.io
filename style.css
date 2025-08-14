@@ -1,12 +1,22 @@
 /* General styles */
 body {
-    font-family: Georgia, serif;
-    text-align: center;
-    background: linear-gradient(to right, rgba(233, 154, 7, 0.8), rgba(64, 224, 208, 0.8));
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  font-family: Georgia, serif;
+  text-align: center;
+  background: linear-gradient(270deg, #7e9ca8, #7e9ca8, #91b5ee, #91b5ee);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+  color: #080808;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 50% 75% 100%; }
+  50% { background-position: 75% 50% 25%; }
+  100% { background-position: 0% 50% 75%; }
+}
+
 * {
     box-sizing: border-box;
   }
@@ -23,20 +33,29 @@ nav {
 }
 
 nav button {
-    background: #4285f4;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 9999px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(43, 48, 57, 0.3);
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 nav button:hover {
-    background: #3367d6;
-    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
+  background: linear-gradient(135deg, #1f1f1f, #0f0f0f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+nav button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -47,7 +66,7 @@ section {
     display: none;
     padding: 20px;
     max-width: 800px;
-    background: linear-gradient(to right, rgba(233, 154, 7, 0.8), rgba(64, 224, 208, 0.8));
+    background: linear-gradient(270 deg, #999797, #6a6969);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: 20px auto;
@@ -67,7 +86,7 @@ section.active {
 }
 
 .project-card {
-    background: rgba(129, 125, 84, 0.926);
+    background: rgba(117, 117, 116, 0.926);
     padding: 15px;
     margin: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -81,14 +100,14 @@ section.active {
 
 .project-card h3 {
     margin-top: 10px;
-    color: #0073e6;
+    color: #0c0c0c;
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 10px;
     padding: 15px 25px; /* Increase padding for larger clickable area */
-    background: #4285f4;
+    background: #0a0a0a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -99,45 +118,12 @@ section.active {
 }
 
 .project-card a:hover {
-    background: #005bb5;
+    background: #171717;
     transform: scale(1.05); /* Slightly enlarge the button on hover for a dynamic effect */
 }
 
 
-.tableau-box {
-    background: rgba(84, 84, 129, 0.926);
-    justify-content: center;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 900px;
-    min-height: 100px; /* taller */
-    flex: 1; /* Takes up remaining horizontal space */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: auto;
-}
-  
-.tableau-box h3 {
-    color: #40e0d0;
-}
-  
-.tableau-box a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #4285f4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-  
-.tableau-box a:hover {
-    background: #005bb5;
-    transform: scale(1.05);
-}
+
   
 
 /* Form Styling */
@@ -157,15 +143,15 @@ input, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #e99a07;
-    background: linear-gradient(to right, rgba(233, 154, 7, 0.8), rgba(64, 224, 208, 0.8));
+    border: 1px solid #020202;
+    background: linear-gradient(180 deg, #999797, #6a6969);
     border-radius: 5px;
 }
 
 button {
     margin-top: 15px;
     padding: 10px;
-    background: #4285f4;
+    background: #1e1e1e;
     color: white;
     border: none;
     cursor: pointer;
@@ -173,7 +159,7 @@ button {
 }
 
 button:hover {
-    background: #005bb5;
+    background: #1f1f1f;
 }
 
 /* About Section Styling */
@@ -213,7 +199,7 @@ button:hover {
     width: 300px; /* Sidebar width */
     box-sizing: border-box;
     overflow: hidden;
-    background: repeating-linear-gradient(45 deg,#d58f04,#d58f04 10px,#40e0d0 10px,#40e0d0 20px);
+    background: repeating-linear-gradient(45 deg,#999797,#999797 10px,#6a6969 10px,#6a6969 20px);
     color: rgb(0, 0, 0);
     padding: 20px;
     height: 100vh;
@@ -313,7 +299,7 @@ button:hover {
     padding-left: 30px;
     max-width: 800px;
     text-align: left;
-    border-left: 3px solid #4285f4;
+    border-left: 3px solid #4c4c4d;
   }
   
   .timeline-item {
@@ -325,7 +311,7 @@ button:hover {
   .timeline-date {
     font-weight: bold;
     font-size: 20px;
-    color: #4285f4;
+    color: #464747;
     margin-bottom: 5px;
   }
   
@@ -338,7 +324,7 @@ button:hover {
   .timeline-content p {
     margin: 0;
     font-size: 16px;
-    color: #555;
+    color: #010101;
   }
   
   .timeline-item::before {
@@ -348,7 +334,7 @@ button:hover {
     top: 5px;
     width: 15px;
     height: 15px;
-    background-color: #4285f4;
+    background-color: #505050;
     border-radius: 50%;
     border: 2px solid white;
   }
@@ -364,12 +350,12 @@ button:hover {
       width: 100%;
       height: auto !important; /* Force it to collapse */
       padding: 20px;
-      background: repeating-linear-gradient(45 deg,#d58f04,#d58f04 10px,#40e0d0 10px,#40e0d0 20px);
+      background: repeating-linear-gradient(45 deg,#999797,#999797 10px,#6a6969 10px,#6a6969 20px);
       text-align: center;
       position: relative; /* No absolute or fixed positioning */
       z-index: 1; /* Ensure it's behind the nav if needed */
     }
-  
+ 
     .left-sidebar .profile-img {
       width: 120px;
       height: 120px;
@@ -382,7 +368,7 @@ button:hover {
       padding: 15px;
       z-index: 2;
       position: relative;
-      background: repeating-linear-gradient(45 deg,#d58f04,#d58f04 10px,#40e0d0 10px,#40e0d0 20px);
+      background: repeating-linear-gradient(45 deg,#999797,#999797 10px,#6a6969 10px,#6a6969 20px);
     }
   
     nav button {
