@@ -2,16 +2,6 @@
 
 :root{
   --bg-main      : #f7f8fc;
-  --bg-card      : #ffffff;
-  --bg-sidebar   : #1f1f1f;
-  --text-dark    : #111417;
-  --text-light   : #e4e6eb;
-  --text-muted   : #5c6370;
-  --accent       : #d4a017;
-  --accent-hover : #b8860b;
-  --border-soft  : #e1e4e8;
-  --shadow       : rgba(0,0,0,.08);
-  --shadow-hover : rgba(0,0,0,.12);
 }
 
 body {
@@ -20,7 +10,7 @@ body {
   background: var(--bg-main);
   background-size: 800% 800%;
   animation: gradientShift 15s ease infinite;
-  color: #080808;
+  color: var(--text-dark);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -130,10 +120,11 @@ section.active {
     font-weight: bold; /* Add emphasis to text */
     text-align: center; /* Ensure text is centered */
     transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effect */
+    text-align: center;
 }
 
 .project-card a:hover {
-    background: #171717;
+    background: #030303;
     transform: scale(1.05); /* Slightly enlarge the button on hover for a dynamic effect */
 }
 
