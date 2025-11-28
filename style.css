@@ -1,8 +1,23 @@
 /* General styles */
+
+:root{
+  --bg-main      : #f7f8fc;
+  --bg-card      : #ffffff;
+  --bg-sidebar   : #1f1f1f;
+  --text-dark    : #111417;
+  --text-light   : #e4e6eb;
+  --text-muted   : #5c6370;
+  --accent       : #d4a017;
+  --accent-hover : #b8860b;
+  --border-soft  : #e1e4e8;
+  --shadow       : rgba(0,0,0,.08);
+  --shadow-hover : rgba(0,0,0,.12);
+}
+
 body {
   font-family: Georgia, serif;
   text-align: center;
-  background: linear-gradient(270deg, #7e9ca8, #7e9ca8, #91b5ee, #91b5ee);
+  background: var(--bg-main);
   background-size: 800% 800%;
   animation: gradientShift 15s ease infinite;
   color: #080808;
