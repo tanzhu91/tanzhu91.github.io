@@ -103,7 +103,6 @@ section.active {
     height: 220px;      /* pick a consistent height */
     object-fit: cover;  /* crops instead of stretching */
     border-radius: 5px;
-    display: block;
 }
 
 .project-card h3 {
